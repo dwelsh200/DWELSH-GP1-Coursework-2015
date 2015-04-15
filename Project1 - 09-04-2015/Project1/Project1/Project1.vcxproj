@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{35A20BC2-EA9D-4798-BBE0-AC7AA4274246}</ProjectGuid>
+    <RootNamespace>Project1</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <ReferencePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(ReferencePath)</ReferencePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>XInput.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="asteroidsGame.cpp" />
+    <ClCompile Include="cAsteroid.cpp" />
+    <ClCompile Include="cBkGround.cpp" />
+    <ClCompile Include="cBullet.cpp" />
+    <ClCompile Include="cFinishLine.cpp" />
+    <ClCompile Include="cFont.cpp" />
+    <ClCompile Include="cFontMgr.cpp" />
+    <ClCompile Include="cGameOver.cpp" />
+    <ClCompile Include="cHealth.cpp" />
+    <ClCompile Include="cInputMgr.cpp" />
+    <ClCompile Include="cIntro.cpp" />
+    <ClCompile Include="cLaser.cpp" />
+    <ClCompile Include="cLife.cpp" />
+    <ClCompile Include="cRocket.cpp" />
+    <ClCompile Include="cSound.cpp" />
+    <ClCompile Include="cSoundMgr.cpp" />
+    <ClCompile Include="cSprite.cpp" />
+    <ClCompile Include="cTexture.cpp" />
+    <ClCompile Include="cTieFighter.cpp" />
+    <ClCompile Include="cWin.cpp" />
+    <ClCompile Include="cWNDManager.cpp" />
+    <ClCompile Include="CXBOXController.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="windowOGL.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="asteroidsGame.h" />
+    <ClInclude Include="cAsteroid.h" />
+    <ClInclude Include="cBkGround.h" />
+    <ClInclude Include="cBullet.h" />
+    <ClInclude Include="cFinishLine.h" />
+    <ClInclude Include="cFont.h" />
+    <ClInclude Include="cFontMgr.h" />
+    <ClInclude Include="cGameOver.h" />
+    <ClInclude Include="cHealth.h" />
+    <ClInclude Include="cInputMgr.h" />
+    <ClInclude Include="cIntro.h" />
+    <ClInclude Include="cLaser.h" />
+    <ClInclude Include="cLife.h" />
+    <ClInclude Include="cRocket.h" />
+    <ClInclude Include="cSound.h" />
+    <ClInclude Include="cSoundMgr.h" />
+    <ClInclude Include="cSprite.h" />
+    <ClInclude Include="cTexture.h" />
+    <ClInclude Include="cTieFighter.h" />
+    <ClInclude Include="cWin.h" />
+    <ClInclude Include="cWNDManager.h" />
+    <ClInclude Include="CXBOXController.h" />
+    <ClInclude Include="GameConstants.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="wglext.h" />
+    <ClInclude Include="windowOGL.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Libraries\alut.lib" />
+    <Library Include="Libraries\DevIL.lib" />
+    <Library Include="Libraries\freeglut.lib" />
+    <Library Include="Libraries\ftgl.lib" />
+    <Library Include="Libraries\ILU.lib" />
+    <Library Include="Libraries\ILUT.lib" />
+    <Library Include="Libraries\OpenAL32.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Project1.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon1.ico" />
+    <Image Include="Images\xwingbit.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
